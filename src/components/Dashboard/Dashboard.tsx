@@ -1,17 +1,14 @@
 import React, { useState } from 'react';
 import { ChatInterface } from '../Chat/ChatInterface';
-import { MoodTracker } from './MoodTracker';
 import { Reflections } from './Reflections';
 import { MentalHealthAssessment } from '../Assessment/MentalHealthAssessment';
-import { MessageSquareIcon, BarChartIcon, BookOpenIcon, BrainIcon } from 'lucide-react';
+import { MessageSquareIcon, BookOpenIcon, BrainIcon } from 'lucide-react';
 export const Dashboard = () => {
   const [activeTab, setActiveTab] = useState('chat');
   const renderTabContent = () => {
     switch (activeTab) {
       case 'chat':
         return <ChatInterface />;
-      case 'mood':
-        return <MoodTracker />;
       case 'reflections':
         return <Reflections />;
       case 'assessment':
@@ -33,10 +30,6 @@ export const Dashboard = () => {
             <button className={`flex items-center justify-center px-4 py-3 sm:px-6 w-1/2 sm:w-1/4 border-b-2 text-sm sm:text-base font-medium ${activeTab === 'chat' ? 'border-blue-500 text-blue-600' : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'}`} onClick={() => setActiveTab('chat')}>
               <MessageSquareIcon size={18} className="mr-2" />
               Chat
-            </button>
-            <button className={`flex items-center justify-center px-4 py-3 sm:px-6 w-1/2 sm:w-1/4 border-b-2 text-sm sm:text-base font-medium ${activeTab === 'mood' ? 'border-blue-500 text-blue-600' : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'}`} onClick={() => setActiveTab('mood')}>
-              <BarChartIcon size={18} className="mr-2" />
-              Mood Tracker
             </button>
             <button className={`flex items-center justify-center px-4 py-3 sm:px-6 w-1/2 sm:w-1/4 border-b-2 text-sm sm:text-base font-medium ${activeTab === 'reflections' ? 'border-blue-500 text-blue-600' : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'}`} onClick={() => setActiveTab('reflections')}>
               <BookOpenIcon size={18} className="mr-2" />
