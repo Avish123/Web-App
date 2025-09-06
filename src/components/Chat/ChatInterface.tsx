@@ -118,12 +118,6 @@ export const ChatInterface = () => {
             </button>
           </div>
         </div>
-        <div className="mt-2 flex justify-center">
-          <button className="flex items-center text-xs text-gray-500 hover:text-gray-700">
-            <InfoIcon size={12} className="mr-1" />
-            About this chatbot
-          </button>
-        </div>
       </div>
     </div>;
 };
