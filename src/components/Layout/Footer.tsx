@@ -1,5 +1,3 @@
-import React from 'react';
-import { HeartIcon } from 'lucide-react';
 export const Footer = () => {
   return <footer className="bg-white shadow-inner mt-10">
       <div className="container mx-auto px-4 py-8">
@@ -30,16 +28,6 @@ export const Footer = () => {
             <a href="#" className="text-sm text-gray-600 hover:text-blue-600">
               Terms of Service
             </a>
-          </div>
-        </div>
-        <div className="border-t border-gray-200 pt-4 flex flex-col items-center">
-          <p className="text-sm text-gray-500">
-            © 2023 MindfulU. All rights reserved.
-          </p>
-          <div className="flex items-center mt-2 text-sm text-gray-500">
-            <span>Made with</span>
-            <HeartIcon size={16} className="mx-1 text-red-500" />
-            <span>for mental well-being research</span>
           </div>
         </div>
       </div>
