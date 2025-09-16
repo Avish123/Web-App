@@ -34,7 +34,7 @@ export function App() {
         return <LandingPage onGetStarted={() => setCurrentPage('login')} />;
     }
   };
-  return <div className="flex flex-col min-h-screen bg-gradient-to-br from-blue-50 to-purple-50">
+  return <div className="flex flex-col min-h-screen bg-gradient-to-br from-yellow-500 to-purple-5">
       <Header isLoggedIn={isLoggedIn} onLogout={handleLogout} onLogoClick={() => setCurrentPage(isLoggedIn ? 'dashboard' : 'landing')} />
       <main className="flex-grow w-full">{renderPage()}</main>
       <Footer />
