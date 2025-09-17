@@ -4,7 +4,7 @@ export const LandingPage = ({
   onGetStarted
 }) => {
   return <div className="w-full">
-      {/* Hero Section */}
+      {/* Bg Section */}
       <section className="bg-gradient-to-r from-blue-600 to-purple-600 text-white">
         <div className="container mx-auto px-4 py-16 md:py-24">
           <div className="max-w-3xl mx-auto text-center">
